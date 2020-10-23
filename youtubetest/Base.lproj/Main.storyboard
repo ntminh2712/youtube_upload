@@ -20,7 +20,7 @@
                                 <rect key="frame" x="20" y="318.5" width="335" height="30"/>
                                 <state key="normal" title="Select video to upload"/>
                                 <connections>
-                                    <action selector="uploadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0QS-mg-IBJ"/>
+                                    <action selector="uploadBtnClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52l-5c-J73"/>
                                 </connections>
                             </button>
                         </subviews>

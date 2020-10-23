@@ -3,7 +3,7 @@ import GoogleAPIClientForREST
 import GoogleSignIn
 import UIKit
 import MobileCoreServices
-
+import GTMSessionFetcher
 
 class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     private let scopes = [kGTLRAuthScopeYouTube,kGTLRAuthScopeYouTubeForceSsl, kGTLRAuthScopeYouTubeUpload,kGTLRAuthScopeYouTubeYoutubepartner]
@@ -69,7 +69,7 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate, 
            
 //            service
 //            user.authentication.aut
-//            self.service.authe = user.authentication.fetcherAuthorizer()
+            self.service.authorizer = user.authentication.fetcherAuthorizer()
 //            uploadClicked(signInButton)
         }
          self.selectVideoBtn.isHidden = !self.signInButton.isHidden
